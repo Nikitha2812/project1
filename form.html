@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>registration form</title>
+        <style>
+        *{
+            background-color: rgb(235, 243, 239);
+           
+        }
+        .second{
+            background-color: rgba(196, 139, 15, 0.692);
+            line-height: 30px;
+            color: rgb(139, 0, 109);
+            font-weight: bolder;
+            font-size: larger;
+            font-style: italic;
+        }
+        p,a{
+            background-color: azure;
+            text-align: start;
+            height: 50px;
+        }
+        button{
+            background-color: rgb(189, 170, 207);
+
+        }
+
+
+        </style>
+        <script>
+            function validate(){
+                var a =document.getElementsByClassName("second");
+                if(a==""){
+                    return false;
+                }
+                else{
+                    true;
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <form onsubmit="validate()" action="loginform.html">
+            <fieldset>
+                <legend>registration form</legend>
+                <div class="second">
+                    
+            userName:<input type="text" name="userName" placeholder="Enter your userName" required></input><br><br>
+            Email:<input type="email" name="email" placeholder="abc122@gmail.com" required></input><br><br>
+            Address:<textarea rows="4"cols="30" name="address" required></textarea><br><br>
+            password:<input type="password" name="password" placeholder=" Enter your password" required></input><br>
+        Confirm Password:<input type="Confirm password"><br><br>
+        <button type="submit">Submit</button><br><br>
+    
+       </div>
+     </fieldset>
+     </form>
+
+
+       <p>Already have an account?<a href="loginform.html">login here</a></p>
+
+
+
+    </body>
